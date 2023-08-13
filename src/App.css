@@ -1,0 +1,61 @@
+:root {
+  --text-primary: #041562;
+  --primary-background: #fff;
+  --scroll-background: #fff;
+  --placeholder-color: #848484;
+}
+[data-theme="dark"] {
+  --text-primary: #fff;
+  --primary-background: #1d1d1d;
+  --scroll-background: #616161;
+  --placeholder-color: #969696;
+
+  transition: 0.2s all ease-in-out;
+  min-height: 100vh;
+  background-color: #000;
+  .modal-content {
+    background-color: #1d1d1d;
+    color: #fff;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #000;
+  }
+}
+[data-theme="light"] {
+  transition: 0.2s all ease-in-out;
+  background-color: #f3f5f7;
+}
+
+.text_red {
+  color: red !important;
+}
+.text_green {
+  color: #54b435 !important;
+}
+.text_primary {
+  color: var(--text-primary) !important;
+}
+.bg_primary {
+  background: var(--primary-background) !important;
+}
+input:focus {
+  background-color: var(--primary-background) !important;
+  color: var(--text-primary) !important;
+}
+input::placeholder {
+  color: var(--placeholder-color) !important;
+}
+
+.table th {
+  color: var(--text-primary);
+  background-color: var(--primary-background);
+}
+.table td {
+  color: var(--text-primary);
+  border: none !important;
+  background-color: var(--primary-background);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: var(--text-primary);
+}
