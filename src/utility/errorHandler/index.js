@@ -3,8 +3,6 @@ import { put } from "redux-saga/effects";
 import { axios } from "../../http";
 import { setBaseUrl, setApiKey } from "../../http/axios/axios_main";
 
-// import { logoutAction } from '../../store/sagaActions';
-
 export default function* errorHandler({
   endpoint,
   successHandler,
