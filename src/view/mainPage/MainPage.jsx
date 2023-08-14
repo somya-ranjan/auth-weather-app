@@ -38,7 +38,6 @@ function MainPage() {
   // lifeCycle
   useEffect(() => {
     getLocation();
-    dispatch(getWeatherData({ city: "puri" }));
   }, []);
 
   return (
@@ -53,7 +52,7 @@ function MainPage() {
           <Currency />
         </Col>
       </Row>
-      {/* {cordError && <ErrorModal message={cordError} />} */}
+      {cordError && <ErrorModal message={cordError} />}
     </Container>
   );
 }

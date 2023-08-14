@@ -21,7 +21,7 @@ function App() {
     if (tokenPresent || isAuth) {
       setAppRoutes(userRoutes);
     } else {
-      setAppRoutes(userRoutes);
+      setAppRoutes(guestRoutes);
     }
   }, [tokenPresent, isAuth]);
 
