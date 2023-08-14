@@ -12,7 +12,7 @@ import "./style.scss";
 
 function Details({ data }) {
   return (
-    <Card className="mb-2 mb-sm-0 bg_primary text_primary">
+    <Card className="mb-2 mb-sm-0 bg_primary text_primary details_hero">
       <CardBody>
         <div className="d-flex justify-content-between align-items-center mb-2">
           <FaTemperatureHigh className="fw-bolder display-6 ms-1" />

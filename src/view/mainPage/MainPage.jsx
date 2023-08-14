@@ -38,21 +38,22 @@ function MainPage() {
   // lifeCycle
   useEffect(() => {
     getLocation();
+    dispatch(getWeatherData({ city: "puri" }));
   }, []);
 
   return (
     <Container fluid className="main_body pb-2 pb-md-0">
       <TopBar />
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} xl={8}>
           <Weather />
         </Col>
-        <Col xs={12} md={4}>
+        <Col xs={12} xl={4}>
           <Map />
           <Currency />
         </Col>
       </Row>
-      {cordError && <ErrorModal message={cordError} />}
+      {/* {cordError && <ErrorModal message={cordError} />} */}
     </Container>
   );
 }

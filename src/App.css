@@ -23,6 +23,7 @@
   }
 }
 [data-theme="light"] {
+  min-height: 100vh;
   transition: 0.2s all ease-in-out;
   background-color: #f3f5f7;
 }
